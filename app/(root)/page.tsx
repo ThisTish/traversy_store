@@ -1,6 +1,6 @@
 
-export default function HomePage() {
 
+const HomePage = () => {
 
   return (
     <div>
@@ -9,3 +9,5 @@ export default function HomePage() {
     
   )
 }
+
+export default HomePage
