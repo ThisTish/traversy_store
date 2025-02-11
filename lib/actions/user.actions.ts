@@ -26,5 +26,7 @@ export async function signInWithCredentials(prevState: unknown, formData: FormDa
 
 // sign out user
 export async function signOutUser(){
+	console.log('clicked')
 	await signOut()
+	console.log('signed out')
 }
