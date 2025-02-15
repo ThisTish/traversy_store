@@ -43,7 +43,8 @@ export const config = {
 			}
 		})
 	],
-	callbacks: {
+	callbacks: {		
+		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		async session({ session, token, user, trigger }: any) {
 			// adds the session's user's id to the token subject
 			session.user.id = token.sub
