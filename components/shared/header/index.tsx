@@ -21,7 +21,7 @@ const Header = () => {
 					</Link>
 				</div>
 
-					<Menu />
+				<Menu />
 			</div>
 		</header>
 	)

@@ -3,13 +3,14 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import { APP_DESCRIPTION, APP_NAME, SERVER_URL } from "@/lib/constants/index"
 import { ThemeProvider } from "next-themes"
+import { SessionProvider } from "next-auth/react"
 
 const inter = Inter({ subsets: ["latin"] })
 
 //this one is not working
 export const metadata: Metadata = {
 	title: {
-		template: `%s | ${APP_NAME}`,
+		template: `%s | ${APP_NAME} ...`,
 		default: APP_NAME
 	},		
 	description: APP_DESCRIPTION,
@@ -32,7 +33,9 @@ export default function RootLayout({
         enableSystem={true}
         disableTransitionOnChange={true}
         >
+          <SessionProvider>
         {children}
+        </SessionProvider>
         </ThemeProvider>
       </body>
     </html>
