@@ -20,7 +20,6 @@ const Header = () => {
 						<span className="hidden font-bold text-2xl ml-3 lg:block">{APP_NAME}</span>
 					</Link>
 				</div>
-
 				<Menu />
 			</div>
 		</header>
